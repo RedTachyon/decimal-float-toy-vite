@@ -11,7 +11,7 @@ const App: React.FC = () => {
                 this is a demonstration of how floating point numbers could work if they were implemented in decimal instead of binary.
             </p>
             <FloatToy mode="binary" useSign={true} exponentBits={8} mantissaBits={23} />
-            <FloatToy mode="decimal" useSign={true} exponentBits={5} mantissaBits={10} />
+            <FloatToy mode="decimal" useSign={true} exponentBits={2} mantissaBits={4} />
         </div>
     );
 };
