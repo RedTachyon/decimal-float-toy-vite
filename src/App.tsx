@@ -10,8 +10,14 @@ const App: React.FC = () => {
                 Inspired by <a href={"https://evanw.github.io/float-toy/"} className="text-blue-600 underline hover:text-blue-800">the other float toy</a>,
                 this is a demonstration of how floating point numbers could work if they were implemented in decimal instead of binary.
             </p>
+            <p>
+                Here you can see a regular binary float32. Very mindful, very demure.
+            </p>
             <FloatToy mode="binary" useSign={true} exponentBits={8} mantissaBits={23} />
-            <FloatToy mode="decimal" useSign={true} exponentBits={2} mantissaBits={4} />
+            <p>
+                And here is a decimal float8. It's a little more... expressive. You can see it reaching absurd values thanks to the base 10 representation.
+            </p>
+            <FloatToy mode="decimal" useSign={true} exponentBits={2} mantissaBits={5} />
         </div>
     );
 };
